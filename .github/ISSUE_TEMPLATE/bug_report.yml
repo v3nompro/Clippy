@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem with Clippy.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include real clipboard contents, history databases, passwords, tokens, or private screenshots.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: macOS version, Mac architecture, and Clippy version or commit.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use sample, non-sensitive content.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
